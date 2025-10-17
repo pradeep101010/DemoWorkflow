@@ -1,0 +1,16 @@
+{
+  "name": "demo-function-app",
+  "version": "1.0.0",
+  "description": "Demo Azure Function App using Node.js",
+  "main": "./HttpExample/Index.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet\"",
+    "build": "echo \"Nothing to build\""
+  },
+  "author": "Pradeep",
+  "license": "MIT",
+  "dependencies": {
+    "azure-functions-core-tools": "^4.0.5198"
+  }
+}
