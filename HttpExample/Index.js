@@ -1,13 +1,12 @@
-module.exports = async function (context, req) {
-  context.log('HTTP trigger function processed a request.');
+const express = require("express");
+const app = express();
 
-  const name = req.query.name || (req.body && req.body.name);
-  const responseMessage = name
-    ? `Hello, ${name}. This is your demo Node.js Function App running on Azure! Second try`
-    : "Hello! Pass a name in the query string or request body for a personalized response.";
+app.get("/", (req, res) => {
+  const name = req.query.name || "World";
+  res.send(`Hello, ${name}. This is your demo Node.js App running on Azure!`);
+});
 
-  context.res = {
-    status: 200,
-    body: responseMessage
-  };
-};
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
