@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   const name = req.query.name || "World";
-  res.send(`Hello, ${name}. This is your demo Node.js App running on Azure! `);
+  res.send(`Hello, ${name}. This is your demo Node.js App running on Azure!   `);
 });
 
 const port = process.env.PORT || 8081;
