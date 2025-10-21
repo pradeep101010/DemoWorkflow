@@ -3,7 +3,7 @@ module.exports = async function (context, req) {
 
   const name = req.query.name || (req.body && req.body.name);
   const responseMessage = name
-    ? `Hello, ${name}. This is your demo Node.js Function App running on Azure!`
+    ? `Hello, ${name}. This is your demo Node.js Function App running on Azure! Second try`
     : "Hello! Pass a name in the query string or request body for a personalized response.";
 
   context.res = {
