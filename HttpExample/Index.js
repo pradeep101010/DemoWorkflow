@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
   res.send(`Hello, ${name}. This is your demo Node.js App running on Azure!`);
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

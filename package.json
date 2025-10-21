@@ -4,13 +4,14 @@
   "description": "Demo Azure Function App using Node.js",
   "main": "./HttpExample/Index.js",
   "scripts": {
-    "start": "func start",
-    "test": "echo \"No tests yet\"",
-    "build": "echo \"Nothing to build\""
+    "start": "node ./HttpExample/Index.js",
+    "test": "node ./HttpExample/Index.js",
+    "build": "node ./HttpExample/Index.js"
   },
   "author": "Pradeep",
   "license": "MIT",
   "dependencies": {
-    "azure-functions-core-tools": "^4.0.5198"
+    "azure-functions-core-tools": "^4.0.5198",
+    "express": "^5.1.0"
   }
 }
