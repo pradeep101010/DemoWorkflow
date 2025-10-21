@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - Pradeep-APP-Service
+name: Build and deploy Node.js app to Azure Web App - Pradeep-app-service
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5053DF01E3AF4295892755DAD021106C }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_CBA9D6931B9946D8946320B069A04530 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BF794362410B4B1DA7BBB5802D50D3AB }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CA168533637B41FDA7143FE8CFBDCD53 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E5048970663149479AAB9F85634E74EE }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_59661F8AA75042B58F1EBF17BF9472FD }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Pradeep-APP-Service'
+          app-name: 'Pradeep-app-service'
           slot-name: 'Production'
           package: .
           
