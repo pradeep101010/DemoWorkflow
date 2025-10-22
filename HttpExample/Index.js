@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
   res.send(`Hello, ${name}. This is your demo Node.js App running on Azure! And this is post CD modification `);
 });
 
-const port = process.env.PORT || 8081;
+const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
