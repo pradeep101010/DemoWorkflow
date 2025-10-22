@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./HttpExample/Index.js",
     "test": "node ./HttpExample/Index.js",
-    "build": "node ./HttpExample/Index.js"
+    "build": "echo 'Build complete'"
   },
   "author": "Pradeep",
   "license": "MIT",
