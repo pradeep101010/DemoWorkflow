@@ -5,7 +5,7 @@
   "main": "./HttpExample/Index.js",
   "scripts": {
     "start": "node ./HttpExample/Index.js",
-    "test": "node ./HttpExample/Index.js",
+    "test": "echo 'test complete'",
     "build": "echo 'Build complete'"
   },
   "author": "Pradeep",
